@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Page</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 20px;
+            background-color: #f8f9fa;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        .navbar h1 {
+            font-weight: bold;
+            margin: 0;
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 20px;
+        }
+
+        .nav-links a {
+            text-decoration: none;
+            color: #000;
+            cursor: pointer;
+        }
+
+        .nav-links a:hover {
+            text-decoration: underline;
+        }
+
+        .categories {
+            text-align: center;
+            margin: 20px 0;
+        }
+
+        .categories h2 {
+            text-decoration: underline;
+        }
+
+        .block-container {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+            padding: 20px;
+        }
+
+        .block {
+            background-color: #e9ecef;
+            padding: 20px;
+            border-radius: 10px;
+            text-align: center;
+        }
+
+        .block img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 10px;
+        }
+
+        .block-name {
+            margin-top: 10px;
+            font-weight: bold;
+        }
+    </style>
+    <script>
+        function logout() {
+            // Redirect to index.html
+            window.location.href = 'index.html';
+        }
+    </script>
+</head>
+<body>
+    <div class="navbar">
+        <h1>THE DEITY</h1>
+        <div class="nav-links">
+            <a href="#" style="font-weight: bold;">HOME</a>
+            <a href="#">TOURS</a>
+            <a href="#">QUIZ</a>
+            <a href="javascript:void(0);" onclick="logout()">LOGOUT</a> <!-- Updated to call logout function -->
+            <a href="#">CONTACT</a>
+        </div>
+    </div>
+
+    <div class="categories">
+        <h2>Categories</h2>
+    </div>
+
+    <div class="block-container">
+        <div class="block">
+            <img src="bg4.jpg" alt="Image 1"> <!-- Replace with your image path -->
+            <div class="block-name">Category 1</div>
+        </div>
+        <div class="block">
+            <img src="bg5.jpg" alt="Image 2"> <!-- Replace with your image path -->
+            <div class="block-name">Category 2</div>
+        </div>
+        <div class="block">
+            <img src="bg6.jpg" alt="Image 3"> <!-- Replace with your image path -->
+            <div class="block-name">Category 3</div>
+        </div>
+    </div>
+</body>
+</html>

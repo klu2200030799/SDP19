@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Cards</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+
+        .container {
+            width: 80%;
+            margin: 20px auto;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        h1 {
+            text-align: center;
+            color: #333;
+        }
+
+        .card {
+            background-color: #fff;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            margin: 15px;
+            display: inline-block;
+            width: 30%;
+            vertical-align: top;
+            box-sizing: border-box;
+        }
+
+        .card h2 {
+            color: #333;
+        }
+
+        .card p {
+            margin: 10px 0;
+            color: #555;
+        }
+
+        .card .grade {
+            font-weight: bold;
+            color: #4CAF50;
+        }
+
+        .navbar {
+            background-color: #333;
+            overflow: hidden;
+        }
+
+        .navbar a {
+            float: left;
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 20px;
+            text-decoration: none;
+        }
+
+        .navbar a:hover {
+            background-color: #ddd;
+            color: black;
+        }
+    </style>
+</head>
+<body>
+       <!-- Navigation Bar -->
+       <div class="navbar">
+        <a href="viewstudents.html">View Students</a>
+        <a href="editstudent.html">Edit Student</a>
+        <a href="analyse.html">Analyze Data</a>
+        <a href="admin.html">Add Student</a>
+        <a href="index.html">Logout</a>
+    </div>
+
+    <div class="container">
+        <h1>Student Performance Cards</h1>
+
+        <div class="card">
+            <h2>Student: John Doe</h2>
+            <p>Marks: 85/100</p>
+            <p>Attendance: 90%</p>
+            <p>Overall: 88%</p>
+            <p class="grade">Grade: A</p>
+            <p>Feedback: Excellent performance, keep up the good work!</p>
+        </div>
+
+        <div class="card">
+            <h2>Student: Jane Smith</h2>
+            <p>Marks: 78/100</p>
+            <p>Attendance: 85%</p>
+            <p>Overall: 82%</p>
+            <p class="grade">Grade: B</p>
+            <p>Feedback: Good performance, but room for improvement.</p>
+        </div>
+
+        <div class="card">
+            <h2>Student: Michael Lee</h2>
+            <p>Marks: 92/100</p>
+            <p>Attendance: 95%</p>
+            <p>Overall: 93%</p>
+            <p class="grade">Grade: A+</p>
+            <p>Feedback: Outstanding performance, keep excelling!</p>
+        </div>
+
+        <div class="card">
+            <h2>Student: Alice Brown</h2>
+            <p>Marks: 60/100</p>
+            <p>Attendance: 75%</p>
+            <p>Overall: 68%</p>
+            <p class="grade">Grade: C</p>
+            <p>Feedback: Needs to work on consistency and effort.</p>
+        </div>
+
+    </div>
+
+</body>
+</html>
